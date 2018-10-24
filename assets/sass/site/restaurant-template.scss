@@ -1,0 +1,284 @@
+
+/* Full Screen Slider */
+
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+}
+.site,
+.hero-slider,
+.hero-slider .owl-stage-outer,
+.hero-slider .owl-stage,
+.hero-slider .owl-item,
+.hero-slider .slide {
+  height: 100%;
+}
+.hero-slider .owl-item{
+  position: relative;
+}
+.hero-content{
+  width: 770px;
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center
+}
+.hero-title{
+  color: #fff;
+  line-height: 1.2;
+  @include font-size(60);
+  margin-bottom: 0;
+  letter-spacing: 6px;
+  a{
+    color: inherit;
+    &:hover{
+      text-decoration: none;
+      color: $color__primary;
+    }
+  }
+}
+.hero-sub-title{
+  font-style: italic;
+  @include font-size(24);
+  border-top: 1px solid rgba(255, 255, 255, 0.51);
+  padding: 20px 0;
+  font-family: $font__main;
+  color: #fff;
+  letter-spacing: 3px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  margin-top:8px;
+}
+.owl-carousel .owl-dots{
+  text-align: center;
+  position: absolute;
+  bottom: 27px;
+  left: 0;
+  width: 100%;
+  .owl-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 4px;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    outline: none;
+    background-clip: content-box;
+    border: 2px solid transparent;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+.owl-carousel .owl-dots .owl-dot.active {
+  background-color: #fff;
+  margin: 0 4px;
+  border:none;
+}
+.owl-carousel .owl-prev{
+  position: absolute;
+  top: 48%;
+  left: 8%;
+}
+.owl-carousel .owl-next{
+  position: absolute;
+  top: 48%;
+  right: 8%;
+}
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next{
+  width: 20px;
+  height: 65px;
+  font-size: 0;
+  outline: none;
+}
+.owl-carousel .owl-nav button.owl-prev{
+  background: url(assets/images/light-arrow-left.svg) no-repeat 0 0;
+}
+.owl-carousel .owl-nav button.owl-next{
+  background: url(assets/images/light-arrow-right.svg) no-repeat 0 0;
+}
+/* Reservation Section */
+.reservation-section{
+  padding: 85px 0 60px;
+  background-color: $color__secondary;
+  color:#fff;
+  .block-heading{
+    margin-bottom: 42px;
+  }
+  .site-branding {
+    border-bottom: none;
+    margin:140px 0 0;
+    padding: 20px 0;
+    width: 100%;
+  }
+  .social-connect {
+    text-align: center;
+    border-top: none;
+    padding: 0;
+    a{
+      float: none;
+      height: 25px;
+      width: 22px;
+      display: inline-block;
+      .fa {
+        font-size: 16px;
+      }
+    }
+  }
+
+}
+
+.footer-contact {
+  @include font-size(14);
+  .phone-fax,
+  .footer-address,
+  .footer-email {
+    padding-left: 60px;
+    padding-bottom: 40px;
+    background-position: 0 6px;
+    line-height: 1.4;
+  }
+  .footer-address {
+    background-image: url(assets/images/pointer.png);
+    background-image: url(assets/images/pointer.svg), linear-gradient(transparent, transparent);
+    background-repeat: no-repeat;
+    display: block;
+    margin-top: 130px;
+    p{
+      margin-bottom: 20px;
+    }
+  }
+  .phone-fax {
+    background-image: url(assets/images/bell.png);
+    background-image: url(assets/images/bell.svg), linear-gradient(transparent, transparent);
+    background-repeat: no-repeat;
+  }
+  .footer-email {
+    background-image: url(assets/images/spoons.png);
+    background-image: url(assets/images/spoons.svg), linear-gradient(transparent, transparent);
+    background-repeat: no-repeat;
+    display: block;
+  }
+}
+.phone-fax span {
+  display: block;
+}
+.footer-email a {
+  display: inline-block;
+}
+.catering-details a,
+.footer-phone a,
+.footer-fax a,
+.footer-email a{
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  &:hover{
+    color:$color__primary;
+  }
+}
+
+/* Contact Form 7 Support */
+.wpcf7-form{
+  padding: 50px 50px 20px;
+  margin: 0 20px;
+  background: #fff;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  label{
+    color: $color__secondary;
+    @include font-size(14);
+    line-height: 1.7;
+    display: block;
+    font-weight: bold;
+  }
+  p{
+    margin: 0 0 15px 0;
+    flex: 0 0 100%;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="date"],
+  input[type="number"],
+  textarea {
+    background-color: #fff;
+    width: 100%;
+  }
+  textarea {
+    height: 150px;
+  }
+
+  p.half-col {
+    width: 48%;
+    flex: 0 0 48%;
+  }
+  p.one-third-col {
+    width: 31%;
+    flex: 0 0 31%;
+  }
+  .wpcf7-select{
+    border: 1px solid rgba(23, 28, 18, 0.5);
+    max-width: 100%;
+    width: 100%;
+    background: url(assets/images/dropdown-arrow.png) no-repeat 95% center;
+    background: url(assets/images/dropdown-arrow.svg) no-repeat 95% center,
+    linear-gradient(transparent, transparent);
+    background-color: #fff;
+    padding: 8px 32px 8px 15px;
+    margin: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0;
+  }
+  p.one-third-col .wpcf7-select{
+    background-position: 92% center;
+  }
+  span.wpcf7-not-valid-tip {
+    color: #da1414;
+    @include font-size(12);
+    display: block;
+    margin-top: 6px;
+  }
+  div.wpcf7-validation-errors, div.wpcf7-acceptance-missing{
+    border-color: #da1414;
+    color: #da1414;
+    @include font-size(14);
+    line-height: 1.3;
+    padding: 10px 20px;
+    margin-top: 10px;
+  }
+  div.wpcf7-mail-sent-ok{
+    color: green;
+    line-height: 1.2;
+    padding: 10px 20px;
+  }
+}
+
+/* Placeholder text color -- selectors need to be separate to work. */
+::-webkit-input-placeholder {
+  color: $color__secondary;
+}
+
+:-moz-placeholder {
+  color: $color__secondary;
+}
+
+::-moz-placeholder {
+  color: $color__secondary;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: $color__secondary;
+}
+
+/* Bottom Widget Area */
+.bottom-widget-area {
+  padding: 60px 0 40px;
+  background-color: #ECE9E2;
+}

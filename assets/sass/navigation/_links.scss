@@ -1,0 +1,21 @@
+a {
+	color: $color__primary;
+    text-decoration: none;
+  	transition: all 0.3s ease;
+	&:visited {
+	  color: $color__primary;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color__primary;
+	    text-decoration: underline;
+	}
+	&:focus {
+		outline: thin dotted;
+	}
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}

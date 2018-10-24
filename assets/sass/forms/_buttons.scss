@@ -1,0 +1,26 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	padding: 14px 30px;
+    cursor: pointer;
+	letter-spacing: 2px;
+	border: none;
+	border-radius: 0;
+	background-color: $color__primary;
+	color: #fff;
+	line-height: 1.4;
+	text-transform: uppercase;
+	display: inline-block;
+	margin-top: 10px;
+    transition: all 0.3s ease;
+    outline: none;
+	&:hover {
+	  background-color: $color__secondary;
+	}
+
+	&:active,
+	&:focus {
+	  background-color: $color__secondary;
+	}
+}

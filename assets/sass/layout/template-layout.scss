@@ -1,0 +1,40 @@
+.site-content{
+  padding:60px 0;
+}
+.restaurant-template .site-content {
+  padding: 0;
+}
+.content-area {
+  float: left;
+  width: 57.3%;
+}
+.site-content .widget-area {
+  float: right;
+  width: 31.62%;
+}
+/* Left Sidebar Layout */
+.left-sidebar-layout .content-area {
+  float: right;
+}
+.left-sidebar-layout .site-content .widget-area {
+  float: left;
+}
+
+/* No Sidebar Layout */
+.no-sidebar-layout .content-area,
+.search .content-area,
+.archive .content-area,
+.blog .content-area,
+.error404 .content-area{
+  width: 100%;
+  margin: 0 auto;
+  float: none;
+}
+
+/* Full Width Layout */
+.full-width-layout .content-area,
+.page-template-default .content-area,
+.home.page-template .content-area{
+  width: 100%;
+  float: none;
+}

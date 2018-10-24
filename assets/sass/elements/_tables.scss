@@ -1,0 +1,21 @@
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+table, th, td {
+  border: 1px solid rgba( $color__secondary, .5 );
+  border-collapse: collapse;
+  padding: 6px 20px;
+  @include font-size(14);
+}
+th{
+  padding: 11px 15px;
+}
+td{
+  padding: 6px 15px;
+  border: none;
+  border-right: 1px solid rgba(23, 28, 18, 0.5);
+}
+tr:nth-child(odd) td{
+  background-color: rgba( $color__primary, .2 );
+}
